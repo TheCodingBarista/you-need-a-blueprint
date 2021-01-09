@@ -9,4 +9,4 @@ Budget.destroy_all
 Category.destroy_all
 
 my_budget = Budget.create({name: "Mel's Budget"})
-my_categories = Category.create([{name: "Fun Money", budget_id: 1}, {name: "Bills", budget_id: 1}])
+my_budget.categories.create([{name: "Fun Money"}, {name: "Bills"}])
