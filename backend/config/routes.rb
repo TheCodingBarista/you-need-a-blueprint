@@ -1,7 +1,16 @@
 Rails.application.routes.draw do
-  devise_for :users, :controllers => { :omniauth_callbacks => "callbacks" }
-  resources :budgets do
-    resources :categories
+    resources :budgets do
+      resources :categories
   end
-  root 'categories#index'
+
+  devise_for :users, path: '/', path_names: {
+    sign_in: 'login',
+    sign_out: 'logout'
+    #registration: 'signup'
+  }, 
+  controllers: { 
+    sessions: 'users/sessions',
+    registrations: 'users/registrations', 
+    omniauth_callbacks: "callbacks" }
+  root to: "categories#index"
 end
