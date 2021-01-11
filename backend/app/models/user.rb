@@ -4,7 +4,7 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable, 
-         :omniauthable, :jwt_authenticatable, jwt_revocation_strategy: self
+         :omniauthable, :jwt_authenticatable, jwt_revocation_strategy: JwtDenyList
 
          
   def self.create_from_omniauth(auth)
