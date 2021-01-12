@@ -29,6 +29,8 @@ gem 'active_model_serializers'
 
 gem 'ynab'
 
+gem 'httparty'
+
 gem 'devise'
 
 gem 'devise-jwt'
