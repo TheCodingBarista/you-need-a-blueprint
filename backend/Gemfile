@@ -31,6 +31,8 @@ gem 'ynab'
 
 gem 'httparty'
 
+gem 'pry'
+
 gem 'devise'
 
 gem 'devise-jwt'
