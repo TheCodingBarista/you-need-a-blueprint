@@ -4,7 +4,3 @@ class Budgets {
         this.fetchAndLoadBudgets()
     }
 }
-
-fetchAndLoadBudgets() {
-    
-}
