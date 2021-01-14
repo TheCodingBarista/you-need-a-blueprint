@@ -14,29 +14,50 @@
   <title>You Need a Blueprint</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" -->
 
 </head>
 
 <body>
   <header>
-    <h1>My Budget</h1>
-  </header>
+    <h1>You Need A Blueprint</h1>
+  </header>  
+
+
 
   <form>
     <input type="text" class="category-input">
+    
     <button class="category-button" type="submit">
       <i class="fas fa-plus-square"></i>
     </button>
   </form>
 
+  <h3>My Budget</h3>
+
+
   <div class="budget-container">
+    <div>
+      <table id="budget-table">
+        <thead>
+          <tr>
+          <td>Category Name</td>
+          <td>Total Saved</td>
+          <td>Total Needed</td>
+          </tr>
+          <tr></tr>
+        </thead>
+      </table>
+      <br>
+      <button type="button" onclick="addCategoryRow()">Add a New Category</button>
+
+    </div>
     <ul class="budget">
       
     </ul>
 
   </div>
-
+   
   <!-- Navigation 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
@@ -73,7 +94,6 @@
         <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
         <ul class="budget">
           <li></li>
-          <li>jQuery 3.5.1</li>
           <li></li>
           <li></li>
           <li></li>

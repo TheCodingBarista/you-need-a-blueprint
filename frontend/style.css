@@ -40,3 +40,46 @@ form button:hover {
     color: white;
     background: #02A4D3;
 }
+
+.budget-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.budget-container button {
+    color: #02A4D3;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.budget {
+    min-width: 30%;
+    list-style: none;
+}
+
+.category {
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category li {
+    flex: 1;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px;
+    background-color: #ff7f49;
+}

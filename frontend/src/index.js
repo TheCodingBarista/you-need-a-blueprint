@@ -24,3 +24,17 @@ function addCategory(event){
   
 }
 
+function addCategoryRow() {
+  const table = document.getElementById("budget-table");
+  const row = table.insertRow(1);
+  const cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  cell1.innerHTML = "Hello";
+  cell2.innerHTML = "Test";
+}
+
+
+
+
+
+
