@@ -18,20 +18,10 @@
 
         <!-- If we dont have a token ask the user to authorize with YNAB -->
         <form v-if="!ynab.token">
-          <h1 class="display-4">Congrats!</h1>
-          <p class="lead">You have successfully started a new YNAB API Application!</p>
-          <ul>
-            <li>Please go to your <a href="https://app.youneedabudget.com/settings/developer" target="_blank" rel="noopener noreferrer">YNAB Developer Settings</a> and create a new OAuth Application.</li>
-            <li>Copy your client ID and redirect URI into <em>src/config.json</em>.</li>
-            <li>Then build your amazing app!</li>
-          </ul>
-          <p>If you have any questions please reach out to us at <strong>api@youneedabudget.com</strong>.</p>
-          <p>&nbsp;</p>
-
-          <div class="form-group">
-            <h2>Hello!</h2>
-            <p class="lead">If you would like to use this App, please authorize with YNAB!</p>
-            <button @click="authorizeWithYNAB" class="btn btn-primary">Authorize This App With YNAB &gt;</button>
+          <div>
+            <h2>or sign in with YNAB to access your budget for ideas!</h2>
+            <br>
+            <button @click="authorizeWithYNAB">Authorize This App With YNAB &gt;</button>
           </div>
         </form>
 
@@ -41,11 +31,12 @@
         <!-- If a budget has been selected, display transactions from that budget -->
         <div v-else>
           <Transactions :transactions="transactions" />
+          <br>
           <button class="btn btn-info" @click="budgetId = null">&lt; Select Another Budget</button>
         </div>
 
       </div>
-
+<br><br><br>
       <Footer />
     </div>
   </div>

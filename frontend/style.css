@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #02A4D3;
+    color: white;
+    font-family: "Imbue", sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 1.5rem;
+    justify-content: center;
+}
+
+form {
+  justify-content: left;
+}
+
+header,form {
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+}
+
+form input,button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    background: white;
+}
+
+a,button {
+    color: #02A4D3;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+a,button:hover {
+    color: white;
+    background: #ff7f49;
+}
+
+.budget-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.budget-container button {
+    color: #02A4D3;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.budget {
+    min-width: 30%;
+    list-style: none;
+}
+
+.category {
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category li {
+    flex: 1;
+}
+
+table {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid white;
+    background-color: #ff7f49;
+}
+
+.budget-table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 3px solid white;
+  align-items: left;
+}
+
+thead th:nth-child(1) {
+  width: 30%;
+}
+
+thead th:nth-child(2) {
+  width: 20%;
+}
+
+thead th:nth-child(3) {
+  width: 15%;
+}
+
+thead th:nth-child(4) {
+  width: 35%;
+}
+
+th, td {
+  padding: 20px;
+}
+
+html {
+  font-family: 'Imbue', helvetica, arial, sans-serif;
+}
+
+th {
+  letter-spacing: 2px;
+}
+
+td {
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+
+tfoot th {
+  text-align: right;
+}

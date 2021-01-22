@@ -1,14 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
+
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Imbue:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>YNAB API Starter Kit</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/flatly/bootstrap.min.css">
+  <title>You Need a Blueprint</title>
 </head>
 <body>
+  <header>
+    <h1>You Need A Blueprint</h1>
+  </header>  
+
+  <div>
+    <h2 text-align="center">Get started adding categories for your goals:</h2>
+  </div>
+<br><br>
+  <div class="budget-container">
+    <div>
+      <table text-align="center" id="budget-table">
+        <thead>
+          <tr>
+          <td>Category Name</td>
+          <td>Total Saved</td>
+          <td>Total Needed</td>
+          <td>
+            <button type="submit" onclick="addCategoryRow()">Add a New Category
+              <i class="fas fa-plus-square"></i>
+            </button>
+          </td>
+          </tr>
+          <tr></tr>
+        </thead>
+      </table>
+      <br>
+    </div>
+  </div>
+
   <div id="app"></div>
+
+
+
   <script src="dist/build.js"></script>
+  <script src="src/index.js" charset="UTF-8"></script>
+  <script src="src/budget.js" charset="UTF-8"></script>
+  <script src="src/category.js" charset="UTF-8"></script>
 </body>
 </html>

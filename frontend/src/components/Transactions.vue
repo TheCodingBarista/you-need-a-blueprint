@@ -1,6 +1,7 @@
 <template>
   <div class="container">
-    <h5>Transactions</h5>
+    <h2>Your Recent Transactions</h2>
+    <br>
     <table class="table">
     <thead>
       <tr>

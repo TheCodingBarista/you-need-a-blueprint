@@ -1,8 +1,9 @@
 <template>
   <div class="budgets container">
-    <h5>Select A Budget</h5>
+    <h3>Select A Budget</h3>
+    <br>
     <div v-for="budget in budgets" class="row">
-      <a class="col" href="#" @click="selectBudget(budget.id, $event)">
+      <a href="#" @click="selectBudget(budget.id, $event)">
         {{budget.name}}
       </a>
     </div>
