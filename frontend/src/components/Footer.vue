@@ -1,7 +1,7 @@
 <template>
   <footer class="pt-4 my-md-5 pt-md-5 border-top">
     <div>
-      <h3>Privacy Policy</h3>
+      <h4>Privacy Policy</h4>
       <br>
       <p>This website does not store any information from you or your YNAB account. All data retrieved from YNAB is stored only in your browser and is never transmitted to any other location or third-party.</p>
     </div>

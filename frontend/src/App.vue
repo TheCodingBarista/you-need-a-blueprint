@@ -19,7 +19,7 @@
         <!-- If we dont have a token ask the user to authorize with YNAB -->
         <form v-if="!ynab.token">
           <div>
-            <h2>or sign in with YNAB to access your budget for ideas!</h2>
+            <h2>Sign in with YNAB to access your budget for ideas!</h2>
             <br>
             <button @click="authorizeWithYNAB">Authorize This App With YNAB &gt;</button>
           </div>
@@ -30,6 +30,8 @@
 
         <!-- If a budget has been selected, display transactions from that budget -->
         <div v-else>
+          <h2>Your Recent Transactions</h2>
+          <br><br>
           <Transactions :transactions="transactions" />
           <br>
           <button class="btn btn-info" @click="budgetId = null">&lt; Select Another Budget</button>

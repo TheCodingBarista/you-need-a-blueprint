@@ -45,7 +45,7 @@ a,button:hover {
     background: #ff7f49;
 }
 
-.budget-container {
+.budget-container, .transaction-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,10 +126,19 @@ th {
 
 td {
   letter-spacing: 1px;
-  text-align: left;
+  text-align: center;
 }
 
 
 tfoot th {
   text-align: right;
+}
+
+h1, h2, h3 {
+  text-align: center;
+}
+
+.row {
+  justify-content: center;
+  text-align: center;
 }

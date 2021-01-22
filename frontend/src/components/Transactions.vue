@@ -1,9 +1,8 @@
 <template>
-  <div class="container">
-    <h2>Your Recent Transactions</h2>
+  <div class="transaction-container">
     <br>
     <table class="table">
-    <thead>
+    <tbody>
       <tr>
         <th>Account</th>
         <th>Date</th>
@@ -12,8 +11,6 @@
         <th>Memo</th>
         <th>Amount</th>
       </tr>
-    </thead>
-    <tbody>
       <tr v-for="transaction in transactions" v-bind:key="transaction.id">
         <td>{{transaction.account_name}}</td>
         <td>{{transaction.date}}</td>
