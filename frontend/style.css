@@ -81,20 +81,20 @@ table {
     display: flex;
     justify-content: left;
     align-items: left;
-    table-layout: fixed;
-    width: 100%;
+    table-layout: auto;
     border-collapse: collapse;
     border: 3px solid white;
     background-color: #ff7f49;
 }
 
 .budget-table {
-  table-layout: fixed;
-  width: 100%;
+  table-layout: auto;
   border-collapse: collapse;
   border: 3px solid white;
   align-items: left;
 }
+
+
 
 thead th:nth-child(1) {
   width: 30%;
@@ -110,6 +110,10 @@ thead th:nth-child(3) {
 
 thead th:nth-child(4) {
   width: 35%;
+}
+
+tbody td {
+  width: 17%;
 }
 
 th, td {

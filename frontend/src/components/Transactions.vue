@@ -1,7 +1,7 @@
 <template>
   <div class="transaction-container">
     <br>
-    <table class="table">
+    <table>
     <tbody>
       <tr>
         <th>Account</th>
@@ -9,7 +9,7 @@
         <th>Payee</th>
         <th>Category</th>
         <th>Memo</th>
-        <th>Amount</th>
+        <th> Amount</th>
       </tr>
       <tr v-for="transaction in transactions" v-bind:key="transaction.id">
         <td>{{transaction.account_name}}</td>
