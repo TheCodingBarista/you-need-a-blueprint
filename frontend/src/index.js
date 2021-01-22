@@ -7,10 +7,11 @@ const budget = document.querySelector('.budget');
 categoryButton.addEventListener('click', addCategory);
 
 document.addEventListener("DOMContentLoaded", () => {
+
 })
 
 function addCategoryRow() {
-  const table = document.getElementById("budget-table");
+  const table = document.getElementById("budgetTable");
   const row = table.insertRow(1);
   const cell1 = row.insertCell(0);
   const cell2 = row.insertCell(1);

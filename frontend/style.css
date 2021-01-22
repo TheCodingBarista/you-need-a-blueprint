@@ -87,7 +87,7 @@ table {
     background-color: #ff7f49;
 }
 
-.budget-table {
+.budgetTable {
   table-layout: auto;
   border-collapse: collapse;
   border: 3px solid white;

@@ -3,8 +3,8 @@ class ApiAdapter {
         this.baseUrl = "http://localhost:3000"
     }
 
-    getBudgets() {
-        return fetch('${this.baseUrl}/budgets')
+    getCategories() {
+        return fetch('${this.baseUrl}/categories')
         .then(resp => resp.json())
     }
 }
