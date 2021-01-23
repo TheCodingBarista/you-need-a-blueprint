@@ -34,7 +34,7 @@
           <br><br>
           <Transactions :transactions="transactions" />
           <br>
-          <button class="btn btn-info" @click="budgetId = null">&lt; Select Another Budget</button>
+          <button class="utton" @click="budgetId = null">&lt; Select Another Budget</button>
         </div>
 
       </div>

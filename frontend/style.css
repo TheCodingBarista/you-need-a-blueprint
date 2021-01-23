@@ -94,7 +94,11 @@ table {
   align-items: left;
 }
 
-
+.category-form {
+  border: 0.15rem solid black;
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
 
 thead th:nth-child(1) {
   width: 30%;
@@ -145,4 +149,19 @@ h1, h2, h3 {
 .row {
   justify-content: center;
   text-align: center;
+}
+
+.float-container, .form-group {
+  /*border: 3px solid #fff;*/
+  padding: 20px;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+}
+
+.float-child {
+  width: 50%;
+  float: left;
+  padding: 20px;
+  /*border: 2px solid red;*/
 }
