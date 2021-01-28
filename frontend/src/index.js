@@ -1,11 +1,5 @@
 console.log("Yoooo, we in here");
 
-const categoryInput = document.querySelector('.category-input');
-const categoryButton = document.querySelector('.category-button');
-const budget = document.querySelector('.budget');
-
-categoryButton.addEventListener('click', addCategory);
-
 document.addEventListener("DOMContentLoaded", () => {
 
 })
@@ -16,13 +10,7 @@ function addCategoryRow() {
   const cell1 = row.insertCell(0);
   const cell2 = row.insertCell(1);
   const cell3 = row.insertCell(2);
-  cell1.innerHTML = "Yooo";
-  cell2.innerHTML = "Mel";
-  cell3.innerHTML = "Codes";
+  cell1.innerHTML = document.getElementById("categoryname").value;
+  cell2.innerHTML = document.getElementById("total-saved").value;
+  cell3.innerHTML = document.getElementById("total-needed").value;
 }
-
-
-
-
-
-

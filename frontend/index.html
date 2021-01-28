@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-
-  <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css2?family=Imbue:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
   <meta name="author" content="">
@@ -26,17 +26,17 @@
 
   <div class="float-container">
     <div class="float-child">
-      <form id="category-form">
+      <form id="categoryForm">
         <div class="form-group">
           <h5>Add a category</h5>
           <br>
-          <input type="text" id="category-name">
+          <input type="text" placeholder="Vacation" name="categoryname" id="categoryname">
           <br><br>
-          <input type="text" id="total-saved">
+          <input type="text" placeholder="500" name="total-saved" id="total-saved">
           <br><br>
-          <input type="text" id="total-needed">
+          <input type="text" placeholder="1000" name="total-needed" id="total-needed">
           <br><br>
-          <button type="submit" onclick="addCategoryRow()">Add a New Category
+          <button id="category-button" type="button" onclick="addCategoryRow()">Add a New Category
             <i class="fas fa-plus-square"></i>
           </button>
         </div>
@@ -52,9 +52,7 @@
               <td>Total Needed</td>
               </tr>
             </thead>
-            <tbody>
-    
-            </tbody>
+            <tbody></tbody>
           </table>
           <br>
       </div>
@@ -62,13 +60,15 @@
       <div style="clear: both;"></div>
   </div>
 
-<br><br>
+  <br><br>
 
-<div id="app"></div>
+  <div id="app"></div>
+
 
   <script src="dist/build.js"></script>
   <script src="src/index.js" charset="UTF-8"></script>
   <script src="src/budget.js" charset="UTF-8"></script>
   <script src="src/category.js" charset="UTF-8"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </body>
 </html>

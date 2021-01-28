@@ -5,8 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Budget.destroy_all
+#Budget.destroy_all
 Category.destroy_all
 
-my_budget = Budget.create({name: "Mel's Budget"})
-my_budget.categories.create([{name: "Fun Money"}, {name: "Bills"}])
+#my_budget = Budget.create({name: "Mel's Budget"})
+Category.create([{name: "Fun Money"}, {name: "Bills"}])

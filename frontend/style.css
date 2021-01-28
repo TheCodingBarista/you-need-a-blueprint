@@ -94,7 +94,7 @@ table {
   align-items: left;
 }
 
-.category-form {
+.categoryForm {
   border: 0.15rem solid black;
   padding: 1rem;
   border-radius: 0.25rem;
@@ -155,7 +155,7 @@ h1, h2, h3 {
   /*border: 3px solid #fff;*/
   padding: 20px;
   justify-content: center;
-  width: 50%;
+  width: 60%;
   margin: auto;
 }
 
