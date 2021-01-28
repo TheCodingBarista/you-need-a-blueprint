@@ -20,7 +20,9 @@
   </header>  
 
   <div>
-    <h2 text-align="center">Get started adding categories for your goals:</h2>
+    <h2 text-align="center">Connect to your YNAB account below</h2>
+    <br></br>   
+    <h3 text-align="center">Or get started adding categories for your goals:</h3>
   </div>
 <br><br>
 
@@ -36,7 +38,7 @@
           <br><br>
           <input type="text" placeholder="1000" name="total-needed" id="total-needed">
           <br><br>
-          <button id="category-button" type="button" onclick="addCategoryRow()">Add a New Category
+          <button id="category-button" type="button" onclick="onFormSubmit()">Add a New Category
             <i class="fas fa-plus-square"></i>
           </button>
         </div>
@@ -63,7 +65,6 @@
   <br><br>
 
   <div id="app"></div>
-
 
   <script src="dist/build.js"></script>
   <script src="src/index.js" charset="UTF-8"></script>
