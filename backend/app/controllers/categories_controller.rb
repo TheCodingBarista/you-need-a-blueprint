@@ -1,6 +1,7 @@
 class CategoriesController < ApplicationController
   before_action :set_category, only: [:show, :update, :destroy]
 
+  respond_to :json
   # GET /categories
   def index
     @categories = Category.all
@@ -15,12 +16,12 @@ class CategoriesController < ApplicationController
 
   # POST /categories
   def create
-    @category = Category.new(category_params)
+    @category = Category.create(category_params)
 
     if @category.save
       render json: @category, status: :created, location: @category
     else
-      render json: @category.errors, status: :unprocessable_entity
+      render json: {error: "Test error"}
     end
   end
 

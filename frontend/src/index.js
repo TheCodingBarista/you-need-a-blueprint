@@ -1,10 +1,10 @@
 console.log("Yoooo, we in here");
 
 document.addEventListener("DOMContentLoaded", () => {
-
 })
 
 function onFormSubmit() {
+  createCategory();
   addCategoryRow();
   resetForm();
 }
@@ -31,4 +31,9 @@ function resetForm() {
   document.getElementById("categoryname").value = "";
   document.getElementById("total-saved").value = "";
   document.getElementById("total-needed").value = "";
+}
+
+function getCategories() {
+  fetch("http://localhost:8080/categories")
+  .then(resp => resp.json())
 }

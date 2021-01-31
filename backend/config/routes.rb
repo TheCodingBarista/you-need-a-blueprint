@@ -12,6 +12,4 @@ Rails.application.routes.draw do
     sessions: 'users/sessions',
     registrations: 'users/registrations', 
     omniauth_callbacks: "callbacks" }
-
-  root to: "categories#index"
 end
